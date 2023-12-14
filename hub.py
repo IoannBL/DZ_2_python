@@ -15,7 +15,7 @@ class Hub:
         if isinstance(item, Item):
             self._items.append(item)
         else:
-            raise ValueError("item не является экземпляром Item или его подкласса.")
+            raise ValueError("item не является экземпляром класса Item или его подкласса.")
     
        
     def __repr__(self):
