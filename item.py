@@ -15,8 +15,6 @@ class Item:
 
     def remove_tag(self,*args,**kwargs):
         self._tags.remove()
-        
-        
 
     def __repr__(self):
          return f"{self._id},{self._name},{list(self._tags)[:3]},{self._cost},{self._date}"
