@@ -16,8 +16,6 @@ class Hub:
             self._items.append(item)
         else:
             raise ValueError("item не является экземпляром класса Item или его подкласса.")
-    
-       
     def __repr__(self):
         return f"{self._items[:3:]}"
     
