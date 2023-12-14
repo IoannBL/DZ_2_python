@@ -59,6 +59,7 @@ class TestHubSingleton(unittest.TestCase):
         self.assertEqual(h,i)
         
     def test_find_most_valuable(self):
+        'Проверка того что возвращаются самые дорогие предметы на складе'
         i = self.hub1.find_most_valuable(2)
         h = [self.item4,self.item5]
         self.assertEqual(i, h)
